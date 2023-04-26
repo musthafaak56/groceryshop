@@ -1,0 +1,77 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+h1{
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(0, 0, 0);
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 2rem;
+}
+
+#main1 {
+    background-color: #B4D330;
+    min-height: 32.4rem;
+    margin: 0;
+    padding-top: 3rem;
+  }
+  
+  #main1 p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box2
+  {
+    background-color: #689368;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 20px;
+    min-height: 200px;
+  }
+
+  .card{
+    /* background-color: #D8DFE9; */
+    /* background-color: #022831; */
+    padding-bottom: 5px;
+    transition: 0.5s;
+    border: 1px solid green;
+    color: black;
+    border-radius: 15px;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.403);
+    transition: 0.5s;  
+  }
+  .imgbox{
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  s{
+    color: red;
+  }
+  a{
+    transition: 0.5s;
+  }
+  a:hover{
+    background-color: rgb(219, 35, 35);
+    box-shadow: 1px 1px 10px 5px rgba(164, 6, 6, 0.538);
+    color: white;
+    transform: scale(1.09);
+    transition: 0.5s;
+  }
+
+  #editBtn:hover{
+    background-color: green;
+    box-shadow: 1px 1px 10px 5px rgba(6, 164, 40, 0.538);
+  }

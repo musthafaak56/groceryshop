@@ -1,0 +1,31 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+.navbar1
+{
+    background-color: #022831;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    transition: 0.5s;
+}
+.nav-link:hover {
+    /* font-weight: bold; */
+    color: rgb(13, 206, 74);
+    transform: scale(1.05);
+    transition: 0.1s;
+  }
+.nav-link:active {
+    color: rgb(143, 20, 20);
+}
+button{
+    font-family: 'Poppins', sans-serif;
+}

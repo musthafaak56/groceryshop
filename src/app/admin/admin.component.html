@@ -1,0 +1,79 @@
+<div id="main1" class="pb-5">
+
+    <div class="row text-center">
+    <h1><i class="fa-solid fa-carrot"></i> GroceryApp</h1>
+    <h2><i class="fa-sharp fa-solid fa-lock"></i> Admin</h2>
+    <h2><i class="fa-sharp fa-solid fa-lock"></i> Access for Admin Only</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-5 inBox mb-3 gx-1">
+                <h3 class="text-center" style="color:white"><i class="fa-solid fa-circle-plus"></i> Add Item to Shop</h3>
+            <form action="">
+                <label class="ms-3 mt-3" for="">Enter Id</label>
+                <input [(ngModel)]="items.id" name="itemId" class="form-control" type="text" placeholder="Enter Id">
+                <label class="ms-3 mt-3" for="">Enter Name</label>
+                <input [(ngModel)]="items.name" name="itemName" class="form-control" type="text" placeholder="Enter Name of grocery">
+                <label class="ms-3 mt-3" for="">Enter Type</label>
+                <input [(ngModel)]="items.type" name="itemType" class="form-control" type="text" placeholder="Enter Type of grocery">
+                <label class="ms-3 mt-3" for="">Enter Old Price</label>
+                <input [(ngModel)]="items.oldprice" name="itemOldprice" class="form-control" type="text" placeholder="Enter Old price">
+                <label class="ms-3 mt-3" for="">Enter Price</label>
+                <input [(ngModel)]="items.price" name="itemPrice" class="form-control" type="text" placeholder="Enter Price">
+                <label class="ms-3 mt-3" for="">Enter Quantity with Unit</label>
+                <input [(ngModel)]="items.weight" name="itemWeight" class="form-control" type="text" placeholder="Enter Weight in kg">
+                <label class="ms-3 mt-3" for="">Enter Photo Url</label>
+                <input [(ngModel)]="items.photo" name="itemPhoto" class="form-control" type="text" placeholder="Enter Photo">
+                <a (click)="addToShop()" routerLink="/groceryapp/admin" type="button" class="addBtn btn btn-success btn-outline-light" routerLink="/grocery/app/admin">Add item to Shop</a>
+            </form>
+            </div>
+
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img class="image-icon mt-5 ms-5" [src]="items.photo" alt="" id="inImage">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+
+        <div class="row d-flex justify-content-center text-center">
+            <!-- <pre>
+                {{myGroceries | json}}
+            </pre> -->
+            <div class="searchBox col-md-10 gx-1">
+                <h2 class="text-center text-light fs-3">Search</h2>
+                <input (keyup)="search($event)" class="form-conrol col-md-12" type="text" placeholder="Search for item">
+            </div>
+
+            <h3>Items in Shop</h3>
+
+            
+            <div class="card col-md-3 m-4 gx-2 text-center" *ngFor="let item of myGroceries| filter:searchKey:'name'">
+                <div class="imgbox">
+                    <img [src]="item.photo" class="card-img-top" alt="..." >
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <p class="card-text mb-3">Price: <s>{{item.oldprice}}</s> {{item.price}} </p>
+                  <p class="card-text mb-3">Quantity: {{item.weight}} </p>
+                  <a routerLink="/groceryapp/update/{{item.id}}" title="update" class="btn btn-primary btn-outline-light">Update Info</a>
+                  <a (click)="deleteItemFromShop(item.id)" id="remBtn" class="btn btn-danger btn-outline-light my-3">Remove item from shop</a>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,40 @@
+<div id="main1" class="pb-5">
+
+    <div class="container">
+
+        <div class="row d-flex justify-content-center text-center">
+
+            <h1><i class="fa-solid fa-carrot"></i> GroceryApp</h1>
+            <h2><i class="fa-solid fa-store"></i> Shop</h2>
+
+            <div class="row d-flex justify-content-center">
+                <div class="searchBox col-md-10 gx-1">
+                    <h2 class="text-center text-light fs-2">Search</h2>
+                    <input (keyup)="search($event)" class="form-control col-md-12" type="text" placeholder="Search for item">
+                </div>
+            </div>
+
+            <!-- <pre>
+                {{myGroceries | json}}
+            </pre> -->
+            
+            <div class="card col-md-3 m-4 gx-1 text-center" *ngFor="let item of myGroceries| filter:searchKey:'name'">
+
+                <div class="imgbox">
+                    <img [src]="item.photo" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <p class="card-text mb-3">Price: <s>{{item.oldprice}}</s> {{item.price}} </p>
+                  <p class="card-text mb-3">Quantity: {{item.weight}}</p>
+                  <a (click)="addToCart(item)" routerLink="/groceryapp/shop" type="button" class="btn btn-primary btn-outline-light">Add to Cart</a>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+
+</div>

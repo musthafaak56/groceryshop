@@ -1,0 +1,41 @@
+<div id="main1" class="pb-5">
+
+    <div class="container">
+
+        <div class="row d-flex justify-content-center text-center">
+
+            <h1><i class="fa-solid fa-carrot"></i> GroceryApp</h1>
+
+            <h2><i class="fa-solid fa-cart-shopping"></i> Cart</h2>
+            <div class="box2">
+
+                <div class="row d-flex justify-content-center">
+                        <!-- <pre>
+                            {{myGroceries | json}}
+                        </pre> -->
+
+                        <h1>Total Amount: {{ getTotalPrice() }}</h1>
+            
+                        <div class="card col-md-3 m-4 text-center" *ngFor="let item of myCart">
+                            <div class="imgbox">
+                                <img [src]="item.photo" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">{{item.name}}</h5>
+                              <p class="card-text mb-3">Price: <s>{{item.oldprice}}</s> {{item.price}}</p>
+                              <p class="card-text mb-3">Quantity: {{item.weight}}</p>
+                              <a routerLink="/groceryapp/edit/{{item.id}}" title="edit" id="editBtn" class="btn btn-primary btn-outline-light">Edit Quantity</a>
+                              <a (click)="deleteItem(item.id)" routerLink="/groceryapp/cart" class="btn btn-danger btn-outline-light mt-2">Remove from Cart</a>
+                            </div>
+                        </div>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

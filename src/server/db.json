@@ -1,0 +1,177 @@
+{
+  "shop": [
+    {
+      "id": "1",
+      "name": "Brocolli",
+      "type": "vegetable",
+      "oldprice": "260",
+      "price": "240",
+      "weight": "250g",
+      "photo": "https://www.pngjoy.com/pngl/394/18380183_brocolli-broccoli-transparent-hd-png-download.png"
+    },
+    {
+      "id": "2",
+      "name": "Cauliflower",
+      "type": "vegetable",
+      "oldprice": "90",
+      "price": "50",
+      "weight": "250g",
+      "photo": "https://www.pngjoy.com/pngl/289/5486731_cauliflower-28-weeks-pregnant-cauliflower-png-download.png"
+    },
+    {
+      "id": "3",
+      "name": "Carrot",
+      "type": "vegetable",
+      "oldprice": "30",
+      "price": "19",
+      "weight": "250g",
+      "photo": "https://www.pngjoy.com/pngl/27/652194_carrot-carrot-vegetable-hd-png-download.png"
+    },
+    {
+      "id": "4",
+      "name": "Apple",
+      "type": "fruit",
+      "oldprice": "120",
+      "price": "90",
+      "weight": "1kg",
+      "photo": "https://www.pngjoy.com/pngl/169/3366333_bitten-apple-apple-png-download.png"
+    },
+    {
+      "id": "5",
+      "name": "Orange",
+      "type": "fruit",
+      "oldprice": "130",
+      "price": "115",
+      "weight": "1kg",
+      "photo": "https://www.pngjoy.com/pngl/3/11704282_orange-download-orange-and-half-of-orange-png.png"
+    },
+    {
+      "id": "6",
+      "name": "Banana",
+      "type": "fruit",
+      "oldprice": "45",
+      "price": "25",
+      "weight": "1kg",
+      "photo": "https://www.pngjoy.com/pngl/519/28488706_banana-png-amp-banana-transparent-clipart-free-download.png"
+    },
+    {
+      "id": "12",
+      "photo": "https://www.pngjoy.com/pngl/434/7920252_tomato-tomato-tropic-hd-png-download.png",
+      "weight": "1kg",
+      "price": "24",
+      "oldprice": "32",
+      "type": "vegetable",
+      "name": "tomato"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/271/5183767_pineapple-juice-pineapple-juice-png-png-download.png",
+      "weight": "750g",
+      "price": "55",
+      "oldprice": "70",
+      "type": "fruits",
+      "name": "pineapple",
+      "id": "1432"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/5/211156_onion-red-onion-png-transparent-png.png",
+      "id": "19",
+      "name": "Onion",
+      "type": "vegetable",
+      "oldprice": "60",
+      "price": "19",
+      "weight": "1kg"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/93/1956032_ginger-ginger-health-benefits-and-side-effects-hd.png",
+      "weight": "250kg",
+      "price": "16",
+      "oldprice": "30",
+      "type": "vegetable",
+      "name": "Ginger",
+      "id": "22"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/372/6898910_lemon-fruit-lemon-transparent-png.png",
+      "weight": "200g",
+      "price": "12",
+      "oldprice": "20",
+      "type": "vegetable",
+      "name": "Lemon",
+      "id": "28"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/892/10430407_dairy-milk-1-03-mb-download-cadbury-dairy.png",
+      "weight": "1p",
+      "price": "5",
+      "oldprice": "6",
+      "type": "chocolate",
+      "name": "Diary Milk normal",
+      "id": "32"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/266/16355278_dairy-milk-cadbury-dairy-milk-caramello-milk-chocolate.png",
+      "weight": "1p",
+      "price": "10",
+      "oldprice": "20",
+      "type": "chocolate",
+      "name": "Diary Milk caramel",
+      "id": "33"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/175/3485418_vanilla-ice-cream-so-delicious-cashew-milk-vanilla.png",
+      "weight": "1L",
+      "price": "130",
+      "oldprice": "150",
+      "type": "icecream",
+      "name": "Vanilla icecream",
+      "id": "41"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/211/4129293_vanilla-vanilla-transparent-png.png",
+      "weight": "1p",
+      "price": "40",
+      "oldprice": "55",
+      "type": "demo",
+      "name": "demo 1",
+      "id": "45"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/112/2311449_spinach-spinach-vegetable-hd-png-download.png",
+      "id": "23",
+      "name": "spinach",
+      "type": "vegetable",
+      "oldprice": "45",
+      "price": "30",
+      "weight": "200g"
+    }
+  ],
+  "cart": [
+    {
+      "photo": "https://www.pngjoy.com/pngl/112/2311449_spinach-spinach-vegetable-hd-png-download.png",
+      "id": "23",
+      "name": "spinach",
+      "type": "vegetable",
+      "oldprice": "35",
+      "price": "20",
+      "weight": "200g"
+    },
+    {
+      "photo": "https://www.pngjoy.com/pngl/266/16355278_dairy-milk-cadbury-dairy-milk-caramello-milk-chocolate.png",
+      "weight": "10p",
+      "price": 100,
+      "oldprice": 140,
+      "type": "chocolate",
+      "name": "Diary Milk caramel",
+      "id": "33"
+    },
+    {
+      "id": "4",
+      "name": "Apple",
+      "type": "fruit",
+      "oldprice": 85,
+      "price": 45,
+      "weight": "500g",
+      "photo": "https://www.pngjoy.com/pngl/169/3366333_bitten-apple-apple-png-download.png"
+    }
+  ]
+}

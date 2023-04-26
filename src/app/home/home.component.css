@@ -1,0 +1,44 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+#main1
+{
+  /* background-color: #B4D330; */
+  /* background-color:  #04566E; */
+  background: url('https://images.pexels.com/photos/2609107/pexels-photo-2609107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  /* filter: contrast(1.5); */
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  min-height: 32.4rem;
+  padding-top: 3rem;
+}
+
+.box1{
+    background: linear-gradient(to bottom right,#04566E,#296829b8);
+    /* background: linear-gradient(to bottom right,#b5d330ce,#b5d33068); */
+    /* background-color:  #B4D330; */
+    color: rgb(255, 255, 255);
+
+    border-radius: 0.9rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+p{
+    font-family: 'Philosopher', sans-serif;
+    font-size: larger;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+}

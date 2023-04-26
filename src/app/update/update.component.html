@@ -1,0 +1,46 @@
+<div id="main1" class="pb-5">
+
+    <div class="row text-center">
+    <h1><i class="fa-solid fa-carrot"></i> GroceryApp</h1>
+    <h2><i class="fa-sharp fa-solid fa-lock"></i> Update Item Info</h2>
+    <h2><i class="fa-sharp fa-solid fa-lock"></i> Access for Admin Only</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!-- <pre>
+                {{items|json}}
+            </pre> -->
+
+            <div class="col-md-5 inBox mb-3 gx-1">
+                <h3 class="text-center" style="color:white"><i class="fa-solid fa-pen-to-square"></i> Update Item Info</h3>
+            <form action="">
+                <label class="ms-3 mt-3" for="">Enter Id</label>
+                <input [(ngModel)]="items.id" name="itemsId" class="form-control" type="text" placeholder="Enter Id">
+                <label class="ms-3 mt-3" for="">Enter Name</label>
+                <input [(ngModel)]="items.name" name="itemsName" class="form-control" type="text" placeholder="Enter Name of grocery">
+                <label class="ms-3 mt-3" for="">Enter Type</label>
+                <input [(ngModel)]="items.type" name="itemsType" class="form-control" type="text" placeholder="Enter Type of grocery">
+                <label class="ms-3 mt-3" for="">Enter Old Price</label>
+                <input [(ngModel)]="items.oldprice" name="itemsOldprice" class="form-control" type="text" placeholder="Enter Old price">
+                <label class="ms-3 mt-3" for="">Enter Price</label>
+                <input [(ngModel)]="items.price" name="itemsPrice" class="form-control" type="text" placeholder="Enter Price">
+                <label class="ms-3 mt-3" for="">Enter Quantity with Unit</label>
+                <input [(ngModel)]="items.weight" name="itemsWeight" class="form-control" type="text" placeholder="Enter Weight in kg">
+                <label class="ms-3 mt-3" for="">Enter Photo Url</label>
+                <input [(ngModel)]="items.photo" name="itemsPhoto" class="form-control" type="text" placeholder="Enter Photo">
+                <a (click)="updateToShop()" routerLink="/groceryapp/admin" type="button" class="addBtn btn btn-success btn-outline-light">Update Item Info</a>
+            </form>
+            </div>
+
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img class="image-icon mt-5 ms-5" [src]="items.photo" alt="" id="inImage">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

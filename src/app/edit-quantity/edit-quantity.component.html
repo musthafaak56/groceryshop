@@ -1,0 +1,45 @@
+
+<div id="main1" class="pb-5">
+
+    <div class="row text-center">
+    <h1><i class="fa-solid fa-carrot"></i> GroceryApp</h1>
+    <h2><i class="fa-solid fa-pen-clip my-3"></i> Edit Quantity <i class="fa-solid fa-scale-unbalanced"></i></h2>
+    <!-- <h2><i class="fa-sharp fa-solid fa-lock"></i> Access for Admin Only</h2> -->
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!-- <pre>
+                {{items|json}}
+            </pre> -->
+
+            <div class="col-md-5 inBox mb-3 gx-1">
+                <h3 class="text-center">Edit Quantity</h3>
+            <form action="">
+                <label class="ms-3 mt-3" for="">Id:</label>
+                <b>{{items.id}}</b> <br>
+                <label class="ms-3 mt-3" for="">Name:</label>
+                <b>{{items.name}}</b> <br>
+                <label class="ms-3 mt-3" for="">Type:</label>
+                <b>{{items.type}}</b> <br>
+                <!-- <label class="ms-3 mt-3" for="">Old Price:</label>
+                <b>{{items.oldprice}}</b> <br> -->
+                <label class="ms-3 mt-3" for="">Price:</label>
+                <b>{{items.price}}</b> <br>
+                <label class="ms-3 mt-3" for="">Enter Quantity with Unit</label>
+                <input [(ngModel)]="items.weight" name="itemsWeight" class="form-control" type="text" placeholder="Enter Weight in kg">
+                <a (click)="editToCart();updatePrice(items)" routerLink="/groceryapp/edit/" type="button" class="addBtn btn btn-success btn-outline-light">Edit Quantity</a>
+            </form>
+            </div>
+
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img class="image-icon mt-5 ms-5" [src]="items.photo" alt="" id="inImage">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
